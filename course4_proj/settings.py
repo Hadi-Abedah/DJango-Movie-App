@@ -47,6 +47,7 @@ class Dev(Configuration):
         'gh',
         #third party 
         'django_celery_results',
+        'django_celery_beat',
     ]
 
     MIDDLEWARE = [
@@ -169,4 +170,4 @@ class Dev(Configuration):
     CELERY_BROKER_URL = "redis://localhost:6379/0"
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-      ADMINS = [("Ben", "ben@example.com")]
+    ADMINS = [("Ben", "ben@example.com")]
